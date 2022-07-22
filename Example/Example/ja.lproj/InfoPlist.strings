@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Example
+
+  Created by lilongcnc on 2022/7/22.
+  
+*/
+
+CFBundleDisplayName = "应用1 SP";
+NSCameraUsageDescription = "相机 SP";

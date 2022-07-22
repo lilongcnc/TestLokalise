@@ -13,6 +13,7 @@
 		FD781ABF288A799600AD1AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD781ABD288A799600AD1AB8 /* Main.storyboard */; };
 		FD781AC1288A799700AD1AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD781AC0288A799700AD1AB8 /* Assets.xcassets */; };
 		FD781AC4288A799700AD1AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD781AC2288A799700AD1AB8 /* LaunchScreen.storyboard */; };
+		FD781AD1288A7A2300AD1AB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD781AD3288A7A2300AD1AB8 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,13 @@
 		FD781AC0288A799700AD1AB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD781AC3288A799700AD1AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD781AC5288A799700AD1AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD781ACB288A79D800AD1AB8 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
+		FD781ACC288A79D800AD1AB8 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FD781ACD288A7A0500AD1AB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		FD781ACE288A7A0500AD1AB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FD781AD2288A7A2300AD1AB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD781AD4288A7A2400AD1AB8 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FD781AD5288A7A2400AD1AB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 				FD781AB7288A799600AD1AB8 /* AppDelegate.swift */,
 				FD781AB9288A799600AD1AB8 /* SceneDelegate.swift */,
 				FD781ABB288A799600AD1AB8 /* ViewController.swift */,
+				FD781AD3288A7A2300AD1AB8 /* InfoPlist.strings */,
 				FD781ABD288A799600AD1AB8 /* Main.storyboard */,
 				FD781AC0288A799700AD1AB8 /* Assets.xcassets */,
 				FD781AC2288A799700AD1AB8 /* LaunchScreen.storyboard */,
@@ -109,6 +118,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-HK",
+				ja,
 			);
 			mainGroup = FD781AAB288A799600AD1AB8;
 			productRefGroup = FD781AB5288A799600AD1AB8 /* Products */;
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD781AC4288A799700AD1AB8 /* LaunchScreen.storyboard in Resources */,
+				FD781AD1288A7A2300AD1AB8 /* InfoPlist.strings in Resources */,
 				FD781AC1288A799700AD1AB8 /* Assets.xcassets in Resources */,
 				FD781ABF288A799600AD1AB8 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +163,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FD781ABE288A799600AD1AB8 /* Base */,
+				FD781ACB288A79D800AD1AB8 /* zh-HK */,
+				FD781ACD288A7A0500AD1AB8 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,8 +173,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				FD781AC3288A799700AD1AB8 /* Base */,
+				FD781ACC288A79D800AD1AB8 /* zh-HK */,
+				FD781ACE288A7A0500AD1AB8 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD781AD3288A7A2300AD1AB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD781AD2288A7A2300AD1AB8 /* en */,
+				FD781AD4288A7A2400AD1AB8 /* zh-HK */,
+				FD781AD5288A7A2400AD1AB8 /* ja */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +196,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -230,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -289,6 +317,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "名字";
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,6 +346,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "名字";
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
