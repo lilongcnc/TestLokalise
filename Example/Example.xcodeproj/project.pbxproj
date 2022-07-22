@@ -14,6 +14,7 @@
 		FD781AC1288A799700AD1AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD781AC0288A799700AD1AB8 /* Assets.xcassets */; };
 		FD781AC4288A799700AD1AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD781AC2288A799700AD1AB8 /* LaunchScreen.storyboard */; };
 		FD781AD1288A7A2300AD1AB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD781AD3288A7A2300AD1AB8 /* InfoPlist.strings */; };
+		FD781ADA288A7C2C00AD1AB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD781ADC288A7C2C00AD1AB8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		FD781AD2288A7A2300AD1AB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD781AD4288A7A2400AD1AB8 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		FD781AD5288A7A2400AD1AB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD781ADB288A7C2C00AD1AB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD781ADE288A7C3400AD1AB8 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FD781ADF288A7C3500AD1AB8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				FD781AB7288A799600AD1AB8 /* AppDelegate.swift */,
 				FD781AB9288A799600AD1AB8 /* SceneDelegate.swift */,
 				FD781ABB288A799600AD1AB8 /* ViewController.swift */,
+				FD781ADC288A7C2C00AD1AB8 /* Localizable.strings */,
 				FD781AD3288A7A2300AD1AB8 /* InfoPlist.strings */,
 				FD781ABD288A799600AD1AB8 /* Main.storyboard */,
 				FD781AC0288A799700AD1AB8 /* Assets.xcassets */,
@@ -136,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD781ADA288A7C2C00AD1AB8 /* Localizable.strings in Resources */,
 				FD781AC4288A799700AD1AB8 /* LaunchScreen.storyboard in Resources */,
 				FD781AD1288A7A2300AD1AB8 /* InfoPlist.strings in Resources */,
 				FD781AC1288A799700AD1AB8 /* Assets.xcassets in Resources */,
@@ -187,6 +193,16 @@
 				FD781AD5288A7A2400AD1AB8 /* ja */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD781ADC288A7C2C00AD1AB8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD781ADB288A7C2C00AD1AB8 /* en */,
+				FD781ADE288A7C3400AD1AB8 /* zh-HK */,
+				FD781ADF288A7C3500AD1AB8 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
