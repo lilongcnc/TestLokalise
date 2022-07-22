@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lokalise
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,9 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Lokalise.shared.setProjectID("3336176862da2ebcdbc086.38174161", token:"54d121a8f7367dc66d2854a01c7b47b8ea7e3aa3")
+        Lokalise.shared.swizzleMainBundle()
+        
         return true
     }
 
+ 
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        Lokalise.shared.checkForUpdates { (updated, errorOrNil) in
+            print("Updated: \(updated)\nError: \(errorOrNil)")
+        }
+    }
+    
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

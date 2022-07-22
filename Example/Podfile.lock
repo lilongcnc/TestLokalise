@@ -1,0 +1,16 @@
+PODS:
+  - Lokalise (0.10.2)
+
+DEPENDENCIES:
+  - Lokalise (~> 0.10.0)
+
+SPEC REPOS:
+  trunk:
+    - Lokalise
+
+SPEC CHECKSUMS:
+  Lokalise: 252c397887dfd9983331abffa90ab60cdb004e19
+
+PODFILE CHECKSUM: 4c257f81c020febcec05045575ac131add9ae72a
+
+COCOAPODS: 1.11.3
